@@ -14,7 +14,7 @@ function Box(name,age){
     原型的工作思路是 首先查找构造方法是否有实例属性和实例方法，如果有则按构造函数的处理方法来处理
                    如果没有就会查找是否有原型属性和原型方法，如果有则按原型对象的处理方法来处理
 */
-function Box(name,age){
+function Box(){
 }
 
 Box.prototype.name = "lee";                             //原型属性
@@ -35,7 +35,7 @@ console.log(box1.run == box2.run);                      //true
 
 //alert(box1.prototype);                                  //这是一个对象，在浏览器是不支持找到的
 //alert(box1.__proto__);                                  //这是一个指针指向prototype原型对象，ie浏览器不支持
-//alert(box1.constructor);                                //构造属性，可以获取对应原型的函数
+//console.log(box1.constructor);                          //构造属性，可以获取对应原型的函数
 
 //判断一个对象实例（对象引用）是不是指向了原型对象。基本上，只要实例化了，就会自动指向
 console.log("判断实例对象是否指向原型对象"+" "+Box.prototype.isPrototypeOf(box1));         //true

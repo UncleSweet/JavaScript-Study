@@ -102,6 +102,7 @@ window.onload = function(){
     var tfoot = table.createTFoot();
     insertTr(tfoot,1);
     insertTd(tfoot.rows[0],1);
+    tfoot.rows[0].cells[0].setAttribute('colspan',3);
     addText(tfoot.rows[0],1);
 
 

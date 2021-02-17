@@ -41,7 +41,7 @@
 //模拟加载JSON数据字符串的过程，var json = load('demo.json');  把json字符串加载进来且赋值给json
 /* 
 var json = '[{"title":"a","num":100},{"title":"b","num":2}]';
-    console.log(JSON.parse(json));                      //把json转换成原生js【解析】
+    console.log(JSON.parse(json));                          //把json转换成原生js【解析】
     console.log(JSON.parse(json,function(key,value){
         if(key == 'title'){
             return 'Mr.'+value;
@@ -54,7 +54,7 @@ var json = '[{"title":"a","num":100},{"title":"b","num":2}]';
 */
 
 var json = [{title:"a",num:100},{title:"b",num:2}];
-console.log(JSON.stringify(json));    //把里面的属性名加上双引号【序列化】
+console.log(JSON.stringify(json));                      //把里面的属性名加上双引号【序列化】,把原生js转化成json形式
 console.log(JSON.stringify(json,['title'],4));
 console.log(JSON.stringify(json,function(key,value){
     if(key == 'title'){

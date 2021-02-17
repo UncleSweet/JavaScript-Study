@@ -32,7 +32,7 @@ function getXMLDOM(xmlstr){
         return xmlDOM;
     }
     else{
-        throw new Error('您 系统或浏览器不支持MSXML库');
+        throw new Error('您系统或浏览器不支持MSXML库');
     }
 
     return xmlDOM;

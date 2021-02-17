@@ -122,6 +122,7 @@ function selectSingleNode(xmlDOM,xpath){
 //跨浏览器节点集合
 function selectNodes(xmlDOM,xpath){
     var nodes = [];
+    
     if(typeof xmlDOM.evaluate != 'undefined'){
         var patten = /\[(\d+)\]/;
         var flag = xpath.match(patten);

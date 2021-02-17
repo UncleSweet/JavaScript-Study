@@ -1,7 +1,7 @@
 //跨浏览器返回xmlDOM对象
 //不同浏览器创建xmlDOM都是不一样的
 
-function getXMLDOM(xmlstr){
+function getXMLDOM(xmlStr){
     var xmlDOM = null;
 
     if(window.DOMParser != 'undefined'){
@@ -32,7 +32,7 @@ function getXMLDOM(xmlstr){
         return xmlDOM;
     }
     else{
-        throw new Error('您 系统或浏览器不支持MSXML库');
+        throw new Error('您的系统或浏览器不支持MSXML库');
     }
 
     return xmlDOM;

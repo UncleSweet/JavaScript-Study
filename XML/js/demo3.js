@@ -5,7 +5,7 @@ function getXMLDOM(xmlStr){
     var xmlDOM = null;
 
     if(window.DOMParser != 'undefined'){
-        xmlDOM = (new DOMParser).parseFromString(xmlStr,'text/xml');
+        xmlDOM = (new DOMParser()).parseFromString(xmlStr,'text/xml');
         var errors = xmlDOM.getElementsByTagName('parsererror');
         if(errors.length>0){
             throw new Error('错误信息：'+errors[0].textContent);
@@ -25,7 +25,6 @@ function getXMLDOM(xmlStr){
                 //跳过
             }
         }
-        xmlDOM.loadXML(xmlStr);
         if(xmlDOM.parseError != 0){
             throw new Error('错误信息：'+xmlDOM.parseError.reason);
         }

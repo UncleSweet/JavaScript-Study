@@ -1,11 +1,4 @@
 
-
-/* window.onload = function(){
-    //只能在ie里面创建，非ie会出错
-    var xmlDom = new ActiveXObject('MSXML2.DOMDocument6.0');
-    alert(xmlDom);
-} */
-
 //这里是只有ie可以用
 function createXMLDOM(){
     var version = [
@@ -26,7 +19,9 @@ function createXMLDOM(){
 }
 
 var xmlDom = createXMLDOM();
-//载入xml文件。两种方式： 1、加载XML字符loadXML()  2、加载XML外部文件load()
+/* 
+    载入xml文件：两种方式： 1、加载XML字符loadXML()  2、加载XML外部文件load()
+*/
 xmlDom.load('../xml/demo.xml');
 alert(xmlDom.xml);
 

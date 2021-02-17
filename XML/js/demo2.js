@@ -1,11 +1,15 @@
+
+
 //DOM2级XML（适合ie9,firefox,chrome,opera)
-/* var xmlDom = document.implementation.createDocument('','root',null);
+/* 
+var xmlDom = document.implementation.createDocument('','root',null);
 //console.log(xmlDom);
 xmlDom.async = true;            true为异步处理，false为同步处理
 xmlDom.onload = function(){
     alert(xmlDom.xml);
 }
-xmlDom.load('../xml/demo1.xml'); */
+xmlDom.load('../xml/demo1.xml'); 
+*/
 
 //load只是支持firefox和ie
 
